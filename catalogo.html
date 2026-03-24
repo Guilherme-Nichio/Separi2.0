@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo de Peças | SEPARI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray">
+
+    <div class="topbar-industrial">
+        <div class="container topbar-flex">
+            <div class="topbar-links"><a href="index.html">Voltar ao Site Principal</a> <a href="#">Manuais Técnicos</a></div>
+            <div class="topbar-contact"><span><i class="ph ph-phone"></i> +55 19 3455-9000</span></div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar-industrial navbar-solid">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="Separi-logo1.png" alt="SEPARI Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">A Empresa</a></li>
+                <li><a href="index.html#servicos">Serviços e Reparos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="menu-toggle" id="mobile-menu"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="internal-header">
+        <div class="container text-center">
+            <h1 id="titulo-catalogo">Catálogo de Peças Genuínas e OEM</h1>
+            <p>Selecione o fabricante ou utilize a barra de busca para encontrar o componente exato.</p>
+        </div>
+    </div>
+
+    <section class="section pt-40">
+        <div class="container catalog-b2b-layout">
+            
+            <button class="btn-mobile-filter" id="btn-toggle-filters">
+                <i class="ph ph-sliders"></i> Filtrar Resultados
+            </button>
+
+            <aside class="sidebar-filters" id="sidebar-filters">
+                <div class="filter-box">
+                    <div class="filter-header-mobile">
+                        <h3><i class="ph ph-funnel"></i> Filtros de Busca</h3>
+                        <i class="ph ph-x close-filters-mobile" id="close-filters"></i>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Código ou Nome da Peça</label>
+                        <div class="search-wrapper">
+                            <i class="ph ph-magnifying-glass"></i>
+                            <input type="text" id="search-input" placeholder="Ex: Rotor MAPX...">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Fabricante da Centrífuga</label>
+                        <select id="filter-fab">
+                            <option value="todos">Todos os Fabricantes</option>
+                            <option value="Alfa Laval">Alfa Laval</option>
+                            <option value="GEA Westfalia">GEA Westfalia</option>
+                            <option value="Pieralisi">Pieralisi</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Família de Componentes</label>
+                        <select id="filter-type">
+                            <option value="todos">Todas as Famílias</option>
+                            <option value="vedacao">O-Rings e Vedações</option>
+                            <option value="eixo">Rotores e Eixos</option>
+                            <option value="eletronico">Painéis e Sensores</option>
+                            <option value="mecanica">Bombas e Acoplamentos</option>
+                        </select>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="catalog-grid-area">
+                <div class="product-grid" id="parts-container">
+                    
+                    <div class="product-card" data-name="Kit Vedação Completo MAPX 207" data-type="vedacao" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info">
+                            <span class="prod-brand brand-alfa">Alfa Laval</span>
+                            <h4>Kit Vedação MAPX 207</h4>
+                            <p>Kit completo de anéis e guarnições.</p>
+                            <button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-name="Eixo Vertical S-Separator" data-type="eixo" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Eixo Vertical S-Separator</h4><p>Usinagem de precisão.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Placa Controladora EPC 60" data-type="eletronico" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Placa EPC 60</h4><p>Módulo de controle.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Bomba de Engrenagem" data-type="mecanica" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Bomba de Engrenagem</h4><p>Alimentação contínua.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Rotor Purificador MAB 103" data-type="eixo" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Rotor Purificador MAB</h4><p>Aço Inoxidável naval.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Conjunto O-Rings Viton Alta Temp" data-type="vedacao" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>O-Rings Viton</h4><p>Resistência térmica.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Sensor de Rotação Magnético" data-type="eletronico" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Sensor de Rotação</h4><p>Leitura exata de RPM.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Rolamentos de Alta Rotação SKF" data-type="mecanica" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Kit Rolamentos SKF</h4><p>Para cargas axiais.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Válvula Solenoide 24V DC" data-type="mecanica" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Válvula Solenoide 24V</h4><p>Controle de água.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Motor Elétrico Marítimo IP55" data-type="eletronico" data-fab="Alfa Laval">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-alfa">Alfa Laval</span><h4>Motor Elétrico Marítimo</h4><p>Proteção IP55 trifásico.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+
+                    <div class="product-card" data-name="Kit Manutenção Anual OSD 18" data-type="vedacao" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Kit Manutenção OSD 18</h4><p>Selagem de tambor.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Tambor Separador Completo" data-type="eixo" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Tambor Separador</h4><p>Testado e balanceado.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="I/O-4 Siemens Modulo" data-type="eletronico" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>I/O-4 Siemens</h4><p>Módulo de IO lógico.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Bomba Centrípeta de Óleo" data-type="mecanica" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Bomba Centrípeta Óleo</h4><p>Extração eficiente.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Eixo Sem-Fim (Bronze Usinado)" data-type="eixo" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Eixo Sem-Fim (Bronze)</h4><p>Transmissão de torque.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Junta de Perfil Especial Plana" data-type="vedacao" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Junta de Perfil</h4><p>Patente de vedação.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Transmissor de Vibração Analógico" data-type="eletronico" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Transmissor Vibração</h4><p>Proteção de máquinas.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Polia Estriada de Transmissão" data-type="mecanica" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Polia Estriada</h4><p>Contato para correias.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Acoplamento Elástico Centrífugo" data-type="mecanica" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Acoplamento Elástico</h4><p>Absorção de impacto.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Rotor Decantador UCA" data-type="eixo" data-fab="GEA Westfalia">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-gea">GEA Westfalia</span><h4>Rotor Decantador UCA</h4><p>Separação de pesados.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+
+                    <div class="product-card" data-name="Selo Mecânico Decanter Baby" data-type="vedacao" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Selo Mecânico Decanter</h4><p>Carbeto de tungstênio.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Eixo Roscado Transportador" data-type="eixo" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Eixo Roscado Transportador</h4><p>Expulsão de sólidos.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Redutor Cicloidal de Engrenagens" data-type="mecanica" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Redutor Cicloidal</h4><p>Diferencial de RPM.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Sonda Termopar PT100" data-type="eletronico" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Sonda PT100</h4><p>Monitor térmico de mancais.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Mancal Principal Dianteiro" data-type="mecanica" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Mancal Dianteiro</h4><p>Ferro fundido nodular.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Bucha de Desgaste (Tungstênio)" data-type="mecanica" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Bucha de Desgaste</h4><p>Proteção contra abrasão.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Cilindro Tambor Separador" data-type="eixo" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Cilindro do Tambor</h4><p>Balanceamento Classe G2.5.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Conjunto de Raspadores em Inox" data-type="mecanica" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Conjunto Raspadores</h4><p>Limpeza de carenagem.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Inversor de Frequência ABB" data-type="eletronico" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Inversor ABB</h4><p>Parametrizado para decanters.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+                    <div class="product-card" data-name="Sistema de Lubrificação Automática" data-type="mecanica" data-fab="Pieralisi">
+                        <img src="https://ogimg.infoglobo.com.br/in/13664035-144-725/FT1086A/lorem-ipsum-logo.jpg" alt="Peça" class="prod-img">
+                        <div class="prod-info"><span class="prod-brand brand-piera">Pieralisi</span><h4>Central de Lubrificação</h4><p>Dosagem milimétrica de graxa.</p><button class="btn-cta-small trigger-modal">Cotar Peça <i class="ph ph-arrow-right"></i></button></div>
+                    </div>
+
+                </div>
+                
+                <div id="no-results" class="no-results-box">
+                    <i class="ph ph-warning-circle"></i>
+                    <p>Nenhum componente encontrado com os filtros atuais.</p>
+                </div>
+            </main>
+
+        </div>
+    </section>
+
+    <div id="quote-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal"><i class="ph ph-x"></i></span>
+            <div class="modal-header">
+                <h3>Solicitação Rápida</h3>
+                <p id="modal-part-name" class="highlight-text">Peça Selecionada</p>
+            </div>
+            <form id="quote-form" class="corporate-form">
+                <input type="hidden" id="part-input" name="peca">
+                <div class="form-group"><label>Empresa / Razão Social</label><input type="text" required></div>
+                <div class="form-group"><label>E-mail Corporativo</label><input type="email" required></div>
+                <div class="form-group"><label>Telefone / WhatsApp</label><input type="tel" required></div>
+                <div class="form-group"><label>Detalhes Adicionais (Série da Máquina)</label><textarea rows="2"></textarea></div>
+                <button type="submit" class="btn-primary w-100">Enviar para Engenharia</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contato" class="footer" style="margin-top: 60px;">
+        <div class="container text-center">
+            <p style="color: #A0AAB2; font-size: 0.9rem;">Dúvidas urgentes? Ligue para <strong style="color: white;">+55 19 3455-9000</strong></p>
+            <p style="color: #666; font-size: 0.8rem; margin-top: 10px;">Copyright © 2026 SEPARI S.A. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
