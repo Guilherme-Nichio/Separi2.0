@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.opacity = '0.7';
             
             setTimeout(() => {
-                alert(`Sucesso! Sua solicitação para: \n"${partInput.value}" \nFoi enviada para o departamento de engenharia.\nEntraremos em contato via telefone ou e-mail.`);
+                alert(`Sucesso! Sua solicitação para: \n"${partInput.value}" \nFoi enviada para o time Separi.\nEntraremos em contato via telefone ou e-mail.`);
                 modal.classList.remove('active');
                 quoteForm.reset();
                 btn.textContent = originalText;
